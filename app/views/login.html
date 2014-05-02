@@ -1,0 +1,52 @@
+
+
+
+  <!-- Content START -->
+  <div id="content">
+      <!-- <div class="layout-app col-fs">  -->
+      <div class="layout-app col-fs">
+          <div class="row row-app">
+              <div class="col-md-12">
+                  <div class="col-separator col-separator-first box col-unscrollable col-fs">
+                      <div class="col-table">
+                          <div class="col-table-row">
+                              <div class="col-app col-unscrollable tab-content">
+                                  <div class="col-app lock-wrapper lock-bg-1 tab-pane active animated fadeIn" id="lock-1-1">
+                                      <h3 class="text-white innerB text-center">Account Access</h3>
+                                      <div class="lock-container">
+                                      	<form name="loginForm" ng-submit="login(credentials)">
+                                      		
+                                          <div class="innerAll text-center">
+                                              <img src="../mosaicpro/assets//images/lifekee_logo.png" width="200" />
+                                              <div class="innerLR">
+                                              		<div class="alert alert-danger" ng-show="loginFail">
+													                            <button type="button" class="close" data-dismiss="alert">×</button>
+													                            <strong>DANGER!</strong> Incorrect username or password
+													                        </div>
+                                                  <input class="form-control text-center bg-gray" type="text" name="login" placeholder="Username"
+                                                  ng-model="credentials.username"/>
+                                                  <input class="form-control text-center bg-gray" type="password" name="password" placeholder="Enter Password"
+                                                  ng-model="credentials.password"/>
+
+									                                <input type="checkbox" name="checkbox" ng-model="credentials.persist">Keep me logged
+                                              </div>
+                                              <div class="innerT">
+                                                  <button  class="btn btn-primary" type="submit">Login <i class="fa fa-fw fa-unlock-alt"></i></button>
+                                              </div>
+                                              <div class="innerT clearfix">
+	                                              <a href="" class="btn margin-none pull-left">Forgot password?</a>
+	                                              <a ng-href="#/signup" class="btn margin-none pull-right" >Sign up</a>
+                                              </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
